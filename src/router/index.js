@@ -8,6 +8,7 @@ import signup from '@/components/page-signup'
 import test from '@/components/page-test'
 import testlist from '@/components/page-testlist'
 import entrying from '@/components/page-entrying'
+import manageProblem from  '@/components/page-manageProblem'
 
 
 Vue.use(Router)
@@ -60,6 +61,11 @@ export default new Router({
       name: 'test',
       component: test
     },
+    {
+      path:'/manageProblem',
+      name:'manageProblem',
+      component:manageProblem
 
+    },
   ]
 })

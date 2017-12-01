@@ -18,13 +18,17 @@
       <input type="text" class="form-control" placeholder="Passwd" aria-describedby="sizing-addon3">
     </div>
     <div>
-      <label class="margin-input remember-me"><input type="checkbox" id="remember_me" data-analytics="AuthPageRememberMe" data-attr1="master">
+      <label class="margin-input remember-me"><input type="checkbox" id="remember_me"
+                                                     data-analytics="AuthPageRememberMe" data-attr1="master">
         <small>Remember me</small>
       </label>
       <small class="forgot">Forgot your password?</small>
     </div>
     <div class="margin-input login">
-      <button type="button" class="btn btn-info dropdown-toggle widthLoginBttn" data-toggle="dropdown"> Log In </button>
+      <router-link to="/entrying">
+        <button type="button" class="btn btn-info dropdown-toggle widthLoginBttn" data-toggle="dropdown"> Log In
+        </button>
+      </router-link>
     </div>
 
   </div>
@@ -48,7 +52,8 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .all{
+
+  .all {
     width: 500px;
     height: 400px;
     border: 1px solid gray;
@@ -64,17 +69,20 @@
     margin: 15px 100px 20px 180px;
 
   }
-  .widthLoginBttn{
-    width:150px;
+
+  .widthLoginBttn {
+    width: 150px;
   }
 
   .lg {
     font-size: large;
   }
-  .remember-me{
+
+  .remember-me {
     margin: 30px;
   }
-  .forgot{
+
+  .forgot {
     margin: 30px 30px 30px 190px;
     color: dodgerblue;
   }

@@ -9,13 +9,14 @@
     <div class="body d-flex">
       <div class="body-width">
         <!-- 主体框 -->
-        <div class="mainbody">
+        <!--sendP是为提交题目的意思-->
+        <div class="mainbody" id="sendP">
           <div class="general-style">
             <div class="mgb">
               <span class="title-size">题目标题</span>
             </div>
             <div>
-              <input type="text" name="title" class="col-md-width fontWeight ip-pad"  required autofocus>
+              <input type="text" name="title" class="col-md-width fontWeight ip-pad" required autofocus>
             </div>
           </div>
           <div class="general-style">
@@ -39,7 +40,7 @@
               <div class="mgb">
                 <span class="title-size">内存限制<span style="font-size: 16px;"> ( MB, 最低16M, Java不能低于32M )</span></span>
               </div>
-              <div >
+              <div>
                 <input type="number" class="col-md-width ip-pad" required/>
               </div>
             </div>
@@ -67,13 +68,13 @@
             </div>
           </div>
           <div class="general-style">
-          <div class="mgb">
-            <span class="title-size">输入描述</span>
+            <div class="mgb">
+              <span class="title-size">输入描述</span>
+            </div>
+            <div>
+              <textarea name="input" class="input1 ip-pad"></textarea>
+            </div>
           </div>
-          <div>
-            <textarea name="input" class="input1 ip-pad"></textarea>
-          </div>
-        </div>
           <div class="general-style">
             <div class="mgb">
               <span class="title-size">输出描述</span>
@@ -108,11 +109,16 @@
             </div>
           </div>
           <div class="general-style">
-            <button  class="btn btn-success item-btn" >
+            <button class="btn btn-success item-btn">
               创建
             </button>
           </div>
         </div>
+        <div id="manageP" class="mainbody" style="border: solid;height: 100px;display: none">
+
+
+        </div>
+
         <!-- 侧边栏 -->
         <div class="asidebar">
           <div>
@@ -124,8 +130,8 @@
           <div>
             <h5 class="title-size">题目</h5>
             <ul style="padding: 0px">
-              <li class="li-hover li-style"><a href="http://www.baidu.com">题目列表</a></li>
-              <li class="li-hover li-style"><a>创建题目</a></li>
+              <li class="li-hover li-style"><a href="http://localhost:8080/#/manageProblem">题目列表</a></li>
+              <li class="li-hover li-style"><a href="http://localhost:8080/#/entrying">创建题目</a></li>
             </ul>
           </div>
         </div>
@@ -136,6 +142,15 @@
 
 </template>
 <script>
+//  var s1 = document.getElementById("sendP");
+//  var m1 = document.getElementById("manageP");
+//
+//  function guestShow() {
+//    s1.style.display = "none";
+//    m1.style.display = "block";
+//
+//  }
+
   import myheader from './app/app-header.vue'
   import myfooter from './app/app-footer.vue'
 
@@ -158,43 +173,43 @@
     margin: 0 0 65px 0;
   }
 
-  .ip-pad{
+  .ip-pad {
     padding: 5px 10px;
-   }
+  }
 
-  .pull-left{
+  .pull-left {
     float: left;
   }
 
-  .pull-right{
+  .pull-right {
     float: right;
   }
 
-  .col-md-width{
+  .col-md-width {
     width: 100%;
   }
 
-  .fontWeight{
+  .fontWeight {
     font-weight: normal;
   }
 
-  .pdr{
+  .pdr {
     padding-right: 20px;
   }
 
-  .mgb{
+  .mgb {
     margin-bottom: 10px;
   }
 
-  .mgb2{
+  .mgb2 {
     margin-bottom: 20px;
   }
 
-  .pad{
-    padding:10px 10px 10px 0px;
+  .pad {
+    padding: 10px 10px 10px 0px;
   }
 
-  .pad1{
+  .pad1 {
     padding: 6px;
   }
 
@@ -213,59 +228,59 @@
     color: #979faf;
   }
 
-  .d-flex{
+  .d-flex {
     display: flex;
     justify-content: center;
   }
 
-  .body-width{
-    width:1440px;
+  .body-width {
+    width: 1440px;
     margin-top: 20px;
     font-weight: bold;
   }
 
-  .mainbody{
+  .mainbody {
     width: 70%;
     float: right;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .general-style{
+  .general-style {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 20px;
   }
 
-  .input{
+  .input {
     font-weight: normal;
     font-size: 16px;
-    width:100%;
+    width: 100%;
     height: 300px;
     resize: none;
     line-height: 1.6;
   }
 
-  .input1{
+  .input1 {
     font-weight: normal;
     font-size: 16px;
-    width:100%;
+    width: 100%;
     height: 130px;
     line-height: 1;
   }
 
-  .panel{
+  .panel {
     border: 1px solid #a8a6a7;
     border-radius: 2px;
 
   }
 
-  .panel-body{
+  .panel-body {
     padding: 20px;
   }
 
-  .asidebar{
-    width:30%;
+  .asidebar {
+    width: 30%;
     padding-right: 10px;
   }
 
@@ -274,7 +289,7 @@
     display: block;
   }
 
-  .li-style{
+  .li-style {
     font-size: 15px;
     padding: 8px 20px;
     position: relative;
@@ -282,14 +297,12 @@
     color: black;
   }
 
-
-
-  .li-hover:hover{
+  .li-hover:hover {
     background-color: #ebe9ea;
-    width:50%;
+    width: 50%;
   }
 
-  .title-size{
+  .title-size {
     font-size: large;
   }
 
@@ -298,7 +311,7 @@
     cursor: pointer;
   }
 
-  a:visited{
+  a:visited {
     border-left: 3px solid #4691f6;
   }
 </style>
