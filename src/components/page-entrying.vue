@@ -107,10 +107,27 @@
               </div>
             </div>
           </div>
+          <div class="general-style">
+            <button  class="btn btn-success item-btn" >
+              创建
+            </button>
+          </div>
         </div>
         <!-- 侧边栏 -->
         <div class="asidebar">
-
+          <div>
+            <h5 class="title-size">通用</h5>
+            <ul style="padding: 0px">
+              <li class="li-hover li-style"><a>用户管理</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5 class="title-size">题目</h5>
+            <ul style="padding: 0px">
+              <li class="li-hover li-style"><a href="http://www.baidu.com">题目列表</a></li>
+              <li class="li-hover li-style"><a>创建题目</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -173,6 +190,14 @@
     margin-bottom: 20px;
   }
 
+  .pad{
+    padding:10px 10px 10px 0px;
+  }
+
+  .pad1{
+    padding: 6px;
+  }
+
   .path {
     height: 65px;
     width: 100%;
@@ -230,8 +255,9 @@
   }
 
   .panel{
-    border: 1px solid black;
+    border: 1px solid #a8a6a7;
     border-radius: 2px;
+
   }
 
   .panel-body{
@@ -241,12 +267,38 @@
   .asidebar{
     width:30%;
     padding-right: 10px;
-    border: 1px solid red;
-    height: 50px;
+  }
+
+  ul li {
+    list-style-type: none;
+    display: block;
+  }
+
+  .li-style{
+    font-size: 15px;
+    padding: 8px 20px;
+    position: relative;
+    display: block;
+    color: black;
   }
 
 
+
+  .li-hover:hover{
+    background-color: #ebe9ea;
+    width:50%;
+  }
+
   .title-size{
     font-size: large;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:visited{
+    border-left: 3px solid #4691f6;
   }
 </style>

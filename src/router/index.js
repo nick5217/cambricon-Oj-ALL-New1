@@ -12,6 +12,7 @@ import entrying from '@/components/page-entrying'
 
 Vue.use(Router)
 
+// noinspection JSAnnotator
 export default new Router({
   routes: [
     {
