@@ -11,8 +11,20 @@
         <!-- 主体框 -->
         <!--sendP是为提交题目的意思-->
 
-        <div id="manageP" class="mainbody" style="border: solid;height: 100px;display: none">
+        <div id="manageP" class="mainbody" style="border: solid;height: 400px;">
+          <table id="pList">
+            <thead>
+            <tr>
+              <th>master</th>
+              <th>Time</th>
+              <th>Difficulty</th>
+              <th>Type</th>
+              <th></th>
+            </tr>
+            </thead>
 
+
+          </table>
 
         </div>
 
@@ -66,6 +78,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .
   .body {
     margin: 0 0 65px 0;
   }

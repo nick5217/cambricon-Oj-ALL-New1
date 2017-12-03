@@ -9,27 +9,28 @@
       </div>
       <div class="contest">
         <div>
-          <div class="mainbody" >
+          <div class="mainbody">
             <div class="mainTitle-style ">
               <h4 class="h4-style">Warmup Challenges</h4>
-          </div>
+            </div>
             <div>
-              <div class="prac-border" >
+              <div class="prac-border">
                 <div class="content-listbody">
                   <span class="list-title">Solve Me First</span>
                 </div>
-                <div class="bottom-listbody" >
+                <div class="bottom-listbody">
                   <div class="practiceText1">
-                  <span class="body-font">Success Rate:</span>
-                  <span >97.33%</span>
-                  <span class="body-font">Max Score:</span>
-                  <span>1</span>
-                  <span class="body-font">Difficulty:</span>
-                  <span >Easy</span>
+                    <span class="body-font">Success Rate:</span>
+                    <span>97.33%</span>
+                    <span class="body-font">Max Score:</span>
+                    <span>1</span>
+                    <span class="body-font">Difficulty:</span>
+                    <span>Easy</span>
                   </div>
-                  <div class="pull-right pos-button" style="display: inline-block;position: absolute;top: 35px;right: 40px" >
+                  <div class="pull-right pos-button"
+                       style="display: inline-block;position: absolute;top: 35px;right: 40px">
                     <router-link to="/test" style="color: #333;text-decoration: none;">
-                      <button  class="btn btn-success item-btn" >
+                      <button class="btn btn-success item-btn">
                         Enter
                       </button>
                     </router-link>
@@ -38,22 +39,23 @@
               </div>
             </div>
             <div>
-              <div class="prac-border" >
+              <div class="prac-border">
                 <div class="content-listbody">
                   <span class="list-title">Solve Me First</span>
                 </div>
-                <div class="bottom-listbody" >
+                <div class="bottom-listbody">
                   <div class="practiceText1">
                     <span class="body-font">Success Rate:</span>
-                    <span >97.33%</span>
+                    <span>97.33%</span>
                     <span class="body-font">Max Score:</span>
                     <span>1</span>
                     <span class="body-font">Difficulty:</span>
-                    <span >Easy</span>
+                    <span>Easy</span>
                   </div>
-                  <div class="pull-right pos-button"  style="display: inline-block;position: absolute;top: 35px;right: 40px">
+                  <div class="pull-right pos-button"
+                       style="display: inline-block;position: absolute;top: 35px;right: 40px">
                     <router-link to="/test" style="color: #333;text-decoration: none;">
-                      <button  class="btn btn-success item-btn" >
+                      <button class="btn btn-success item-btn">
                         Enter
                       </button>
                     </router-link>
@@ -90,25 +92,25 @@
           speciesName: 'Tutorials',
           trackName: '30 Days of Code'
         },
-        trackListData:[]
+        trackListData: []
       }
     },
     methods: {
       selectTrack: function (index) {
-        this.trackList[index].isSelected=true
-        var temp=this.path.species
-        this.path.species=''
-        this.path.species=temp
+        this.trackList[index].isSelected = true
+        var temp = this.path.species
+        this.path.species = ''
+        this.path.species = temp
 
 //        console.log(123)
       }
     },
     computed: {
       trackList: function () {
-        var that=this
+        var that = this
         switch (this.path.species) {
           case 'CORE CS':
-            var array=[
+            var array = [
               {
                 id: 'Algorithms',
                 isSelected: false,
@@ -121,10 +123,10 @@
                 isSelected: false,
               },
             ];
-            that.trackListData=array
-            return  array
+            that.trackListData = array
+            return array
           case 'TUTORIALS':
-            var array=[
+            var array = [
               {
                 id: '30 Day of Code',
                 isSelected: false,
@@ -142,8 +144,8 @@
                 isSelected: false,
               },
             ]
-            that.trackListData=array
-            return  array
+            that.trackListData = array
+            return array
           case 'SPECIALIZED SKILLS':
             return [
               {
@@ -176,11 +178,11 @@
           case 'LANGUAGES':
             return [
               {
-                id:  'C++',
+                id: 'C++',
                 isSelected: false,
               },
               {
-                id:  'Java',
+                id: 'Java',
                 isSelected: false,
               },
               {
@@ -192,7 +194,7 @@
                 isSelected: false,
               },
               {
-                id:  'Functional Programming',
+                id: 'Functional Programming',
                 isSelected: false,
               },
             ]
@@ -271,31 +273,35 @@
     border-left: 4px solid #4691f6;
   }
 
-  <!-- -----------------我是华丽的分割线----------------- -->
-  .pos-button{
+  <!--
+  -----------------我是华丽的分割线-----------------
+
+  -->
+  .pos-button {
     display: inline-block;
     position: absolute;
     top: 35px;
     right: 40px;
   }
 
-  .practiceText1{
+  .practiceText1 {
     width: 400px;
     display: inline-block;
     position: absolute;
     top: 55px;
   }
 
-  .font-w{
+  .font-w {
     font-weight: bold;
   }
-  .h4-style{
+
+  .h4-style {
     margin: 0px;
     font-weight: bold;
     font-size: 150%;
   }
 
-  .li-hover:hover{
+  .li-hover:hover {
     border-left: 3px solid #4691f6;
   }
 
@@ -305,44 +311,46 @@
     width: 160px;
   }
 
-  .pull-left{
+  .pull-left {
     float: left;
   }
 
-  .pull-right{
-    float:right;
+  .pull-right {
+    float: right;
   }
 
-  .mainbody{
+  .mainbody {
     width: 65%;
     float: right;
     box-sizing: border-box;
   }
 
-  .mainTitle-style{
+  .mainTitle-style {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
 
-  .prac-border{
+  .prac-border {
     border: 1px solid #e0e4e8;
     border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
   }
 
-  .content-listbody{
+  .content-listbody {
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
   }
-  .list-title{
-    color: rgba(14,220,0,0.96);
+
+  .list-title {
+    color: rgba(14, 220, 0, 0.96);
     font-size: large;
-    font-weight:600;
+    font-weight: 600;
   }
-  .bottom-listbody{
+
+  .bottom-listbody {
     padding-top: 10px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -350,8 +358,8 @@
     margin-bottom: 10px;
   }
 
-  .body-font{
-    font-weight:600;
+  .body-font {
+    font-weight: 600;
     font-size: x-small;
     color: #979faf;
   }

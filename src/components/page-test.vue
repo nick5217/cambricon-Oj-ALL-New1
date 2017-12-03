@@ -1,24 +1,22 @@
 <template>
-  <div style="z-index: 10;position: relative">
+  <div >
     <myheader></myheader>
+    <div class="path">
+      <div class="path-wrap">
+        <span><strong>Test</strong> </span>
+      </div>
+    </div>
     <!--body是全部的内容-->
     <div class="body">
-      <div id="main">
+      <div id="main" style="margin-top: -60px">
         <div id="target">
           <!--guide是导航栏，可以跳转到首页-->
           <!--<div id="guide">-->
           <!--<span> <a href=""><strong>寒武纪首页></strong></a>-->
           <!--<p style="display: inline-block"><strong>在线测试</strong></p></span>-->
           <!--</div>-->
-          <div class="path">
-            <div class="path-wrap">
-              <span>Dashboard > </span>
-            </div>
-          </div>
+
           <!--这是一条横线-->
-          <div>
-            <hr style="color: #9ea7b2;">
-          </div>
           <!--hd是题目的标题还有题目的发布者，之后应该要更改-->
           <div id="hd">
             <span style="font-size:40px;; font-weight :600">
@@ -274,11 +272,24 @@
     display: inline-block;
     height: 0px;
   }
-
-  #target {
-    height: 60px;
-    padding: 20px;
+  .path {
+    height: 65px;
+    width: 100%;
+    /*background-color: royalblue;*/
+    border-bottom: 1px solid #e0e4e8;
+    padding-left: 20px;
   }
+
+  .path-wrap {
+    width: 1440px;
+    margin: 0 auto;
+    line-height: 65px;
+    color: #979faf;
+  }
+  /*#target {*/
+    /*height: 60px;*/
+    /*padding: 20px;*/
+  /*}*/
 
   #main {
     padding: 20px;
