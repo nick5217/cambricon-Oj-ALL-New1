@@ -9,25 +9,85 @@
     <div class="body d-flex">
       <div class="body-width">
         <!-- 主体框 -->
-        <!--sendP是为提交题目的意思-->
+        <!--manageP是为管理题目的意思-->
 
-        <div id="manageP" class="mainbody" style="border: solid;height: 400px;">
-          <table id="pList">
+        <div id="manageP" class="mainbody">
+          <h1>Problem List</h1><br>
+          <table id="pList" class="table table-hover table-striped" style="width: 900px;">
+            <tbody>
+            <!--<tr>-->
+            <!--<th style="color: white">dd</th>-->
+            <!--</tr>-->
+            </tbody>
             <thead>
+
             <tr>
-              <th>master</th>
+              <th>ID</th>
+              <th>Problem</th>
               <th>Time</th>
-              <th>Difficulty</th>
-              <th>Type</th>
+              <th>Master</th>
+              <th>Pass Time</th>
               <th></th>
             </tr>
             </thead>
+            <tbody>
+            <tr>
+              <td>xYM</td>
+              <td>xym</td>
+              <td>xym</td>
+              <td>xYM</td>
+              <td>xYM</td>
+              <td>
+                <router-link to="/entrying">
+                  <button class="btn"
+                          style="background-color: deepskyblue;color: white">Change
+                  </button>
+                </router-link>&nbsp;&nbsp;
+                <button class="btn"
+                        style="background-color:#5cb85c;color: white">Submitte
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>xYM</td>
+              <td>xym</td>
+              <td>xym</td>
+              <td>xYM</td>
+              <td>xYM</td>
+              <td>
+                <router-link to="/entrying">
+                  <button class="btn"
+                          style="background-color: deepskyblue;color: white">Change
+                  </button>
+                </router-link>&nbsp;&nbsp;
+                <button class="btn"
+                        style="background-color:#5cb85c;color: white">Submitte
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>xYM</td>
+              <td>xym</td>
+              <td>xym</td>
+              <td>xYM</td>
+              <td>xYM</td>
+              <td>
+                <router-link to="/entrying">
+                  <button class="btn"
+                          style="background-color: deepskyblue;color: white">Change
+                  </button>
+                </router-link>&nbsp;&nbsp;
+                <button class="btn"
+                        style="background-color:#5cb85c;color: white">Submitte
+                </button>
+              </td>
+            </tr>
 
-
+            </tbody>
           </table>
 
         </div>
-
+        <!--<input type="number">-->
         <!-- 侧边栏 -->
         <div class="asidebar">
           <div>
@@ -78,7 +138,23 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .
+  /*#pList th {*/
+  /*width: 150px;*/
+  /*font-size: x-large;*/
+  /*}*/
+
+  #pList tr {
+  }
+
+  #pList {
+    /*padding-bottom: 0px;*/
+    /*padding-top: 60px;*/
+  }
+
+  #pList button {
+    background-color: deepskyblue;
+  }
+
   .body {
     margin: 0 0 65px 0;
   }
