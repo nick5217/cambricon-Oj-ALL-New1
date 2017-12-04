@@ -13,7 +13,7 @@
 
         <div id="manageP" class="mainbody">
           <h1>Problem List</h1><br>
-          <table id="pList" class="table table-hover table-striped" style="width: 900px;">
+          <table id="pList" class="table table-hover table-striped" style="width: 800px;">
             <tbody>
             <!--<tr>-->
             <!--<th style="color: white">dd</th>-->
@@ -33,17 +33,17 @@
             <tbody>
             <tr>
               <td>xYM</td>
-              <td>xym</td>
+              <td>Problem1</td>
               <td>xym</td>
               <td>xYM</td>
-              <td>xYM</td>
-              <td>
+              <td width="100">xYM</td>
+              <td width="200">
                 <router-link to="/entrying">
                   <button class="btn"
                           style="background-color: deepskyblue;color: white">Change
                   </button>
                 </router-link>&nbsp;&nbsp;
-                <button class="btn"
+                <button class="btn" onclick="subShow"
                         style="background-color:#5cb85c;color: white">Submitte
                 </button>
               </td>
@@ -82,11 +82,45 @@
                 </button>
               </td>
             </tr>
-
             </tbody>
           </table>
-
         </div>
+
+        <!--这块是已提交题目-->
+        <div id="subList" class="mainbody">
+          <h1>Submitted List</h1>
+          <table class="table table-hover table-striped" style="width: 800px">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Time</th>
+              <th>Master</th>
+              <th>Result</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>xYM</td>
+              <td>xym</td>
+              <td>xym</td>
+              <td>xYM</td>
+              <td>
+                <router-link to="/entrying">
+                  <button class="btn"
+                          style="background-color: deepskyblue;color: white">Detail
+                  </button>
+                </router-link>&nbsp;&nbsp;
+                <button class="btn" onclick="subShow"
+                        style="background-color:#5cb85c;color: white">Recycle
+                </button>
+              </td>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+
         <!--<input type="number">-->
         <!-- 侧边栏 -->
         <div class="asidebar">
@@ -143,10 +177,12 @@
   /*font-size: x-large;*/
   /*}*/
 
-  #pList tr {
+  #pList td {
+    height: 10px;
   }
 
   #pList {
+    padding: 0px;
     /*padding-bottom: 0px;*/
     /*padding-top: 60px;*/
   }
