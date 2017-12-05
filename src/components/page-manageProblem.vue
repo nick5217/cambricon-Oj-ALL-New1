@@ -14,11 +14,7 @@
         <div id="manageP" class="mainbody">
           <h1>Problem List</h1><br>
           <table id="pList" class="table table-hover table-striped" style="width: 800px;">
-            <tbody>
-            <!--<tr>-->
-            <!--<th style="color: white">dd</th>-->
-            <!--</tr>-->
-            </tbody>
+
             <thead>
 
             <tr>
@@ -43,7 +39,7 @@
                           style="background-color: deepskyblue;color: white">Change
                   </button>
                 </router-link>&nbsp;&nbsp;
-                <button class="btn" onclick="subShow"
+                <button class="btn" onclick="subShow()"
                         style="background-color:#5cb85c;color: white">Submitte
                 </button>
               </td>
@@ -60,7 +56,7 @@
                           style="background-color: deepskyblue;color: white">Change
                   </button>
                 </router-link>&nbsp;&nbsp;
-                <button class="btn"
+                <button class="btn" onclick="subShow()"
                         style="background-color:#5cb85c;color: white">Submitte
                 </button>
               </td>
@@ -77,7 +73,7 @@
                           style="background-color: deepskyblue;color: white">Change
                   </button>
                 </router-link>&nbsp;&nbsp;
-                <button class="btn"
+                <button class="btn" onclick="subShow()"
                         style="background-color:#5cb85c;color: white">Submitte
                 </button>
               </td>
@@ -87,7 +83,7 @@
         </div>
 
         <!--这块是已提交题目-->
-        <div id="subList" class="mainbody">
+        <div id="subList">
           <h1>Submitted List</h1>
           <table class="table table-hover table-striped" style="width: 800px">
             <thead>
@@ -96,6 +92,7 @@
               <th>Time</th>
               <th>Master</th>
               <th>Result</th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
@@ -105,12 +102,11 @@
               <td>xym</td>
               <td>xYM</td>
               <td>
-                <router-link to="/entrying">
-                  <button class="btn"
-                          style="background-color: deepskyblue;color: white">Detail
-                  </button>
-                </router-link>&nbsp;&nbsp;
-                <button class="btn" onclick="subShow"
+                <button class="btn"
+                        style="background-color: deepskyblue;color: white">Detail
+                </button>
+                &nbsp;&nbsp;
+                <button class="btn"
                         style="background-color:#5cb85c;color: white">Recycle
                 </button>
               </td>
@@ -118,9 +114,8 @@
             </tbody>
 
           </table>
+
         </div>
-
-
         <!--<input type="number">-->
         <!-- 侧边栏 -->
         <div class="asidebar">
@@ -140,19 +135,23 @@
         </div>
       </div>
     </div>
+
     <myfooter></myfooter>
+    <script type="application/javascript">
+      var s1 = document.getElementById("subList");
+
+      function subShow() {
+        s1.style.display = "block"
+
+      }
+
+    </script>
   </div>
 
 </template>
+
 <script>
-  //  var s1 = document.getElementById("sendP");
-  //  var m1 = document.getElementById("manageP");
-  //
-  //  function guestShow() {
-  //    s1.style.display = "none";
-  //    m1.style.display = "block";
-  //
-  //  }
+
 
   import myheader from './app/app-header.vue'
   import myfooter from './app/app-footer.vue'
@@ -176,6 +175,13 @@
   /*width: 150px;*/
   /*font-size: x-large;*/
   /*}*/
+  #subList {
+    display: none;
+    width: 70%;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   #pList td {
     height: 10px;
