@@ -103,11 +103,11 @@
               <td>xYM</td>
               <td>
                 <button class="btn"
-                        style="background-color: deepskyblue;color: white">Detail
+                        style="color: white;background-color:#ff9c97">Detail
                 </button>
                 &nbsp;&nbsp;
                 <button class="btn"
-                        style="background-color:#5cb85c;color: white">Recycle
+                        style="background-color:red;color:white">Recycle
                 </button>
               </td>
             </tr>
@@ -199,6 +199,9 @@
 
   .body {
     margin: 0 0 65px 0;
+  }
+  .body a{
+    text-decoration: none;
   }
 
   .ip-pad {

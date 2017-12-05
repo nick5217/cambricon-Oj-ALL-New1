@@ -288,18 +288,24 @@
     list-style-type: none;
     display: block;
   }
+.body a{
+  text-decoration: none;
 
+
+}
   .li-style {
     font-size: 15px;
     padding: 8px 20px;
     position: relative;
     display: block;
-    color: black;
+    color: black; text-decoration: none;
   }
 
   .li-hover:hover {
     background-color: #ebe9ea;
     width: 50%;
+    text-decoration: none;
+
   }
 
   .title-size {
