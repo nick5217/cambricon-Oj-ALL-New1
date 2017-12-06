@@ -33,7 +33,7 @@
 
   .wrap {
     position: relative;
-    width: 1440px;
+    width: 1040px;
     height: 100%;
     line-height: 50px;
     margin: 0 auto;

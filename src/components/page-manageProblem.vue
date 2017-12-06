@@ -183,8 +183,8 @@
     padding-right: 10px;
   }
 
-  #pList td {
-    height: 10px;
+  #pList tr {
+    height: 1px;
   }
 
   #pList {
@@ -195,6 +195,7 @@
 
   #pList button {
     background-color: deepskyblue;
+    width: 80px;
   }
 
   .body {

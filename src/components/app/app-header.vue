@@ -57,13 +57,13 @@
     top: 0;
     height: 65px;
     width: 100%;
-    min-width: 1440px;
+    min-width: 1040px;
     background-color: #39424e;
   }
 
   .wrap {
     position: relative;
-    width: 1440px;
+    width: 1040px;
     height: 100%;
     margin: 0 auto;
     padding-left: 180px;

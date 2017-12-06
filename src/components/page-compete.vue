@@ -191,7 +191,7 @@
   }
 
   .path-wrap {
-    width: 1440px;
+    width: 1040px;
     margin: 0 auto;
     line-height: 65px;
     color: #979faf;
