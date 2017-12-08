@@ -134,7 +134,7 @@
               <li class="li-hover li-style"><a href="http://localhost:8080/#/entrying">创建题目</a></li>
             </ul>
           </div>
-         </div>
+        </div>
       </div>
     </div>
     <myfooter></myfooter>
@@ -142,14 +142,14 @@
 
 </template>
 <script>
-//  var s1 = document.getElementById("sendP");
-//  var m1 = document.getElementById("manageP");
-//
-//  function guestShow() {
-//    s1.style.display = "none";
-//    m1.style.display = "block";
-//
-//  }
+  //  var s1 = document.getElementById("sendP");
+  //  var m1 = document.getElementById("manageP");
+  //
+  //  function guestShow() {
+  //    s1.style.display = "none";
+  //    m1.style.display = "block";
+  //
+  //  }
 
   import myheader from './app/app-header.vue'
   import myfooter from './app/app-footer.vue'
@@ -157,6 +157,7 @@
   export default {
     name: 'entrying',
     data() {
+
       return {}
     },
     methods: {},
@@ -288,17 +289,19 @@
     list-style-type: none;
     display: block;
   }
-.body a{
-  text-decoration: none;
 
+  .body a {
+    text-decoration: none;
 
-}
+  }
+
   .li-style {
     font-size: 15px;
     padding: 8px 20px;
     position: relative;
     display: block;
-    color: black; text-decoration: none;
+    color: black;
+    text-decoration: none;
   }
 
   .li-hover:hover {

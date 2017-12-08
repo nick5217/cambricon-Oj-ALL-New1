@@ -27,29 +27,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>xYM</td>
-              <td>Problem1</td>
-              <td>xym</td>
-              <td>xYM</td>
-              <td width="100">xYM</td>
-              <td width="200">
-                <router-link to="/entrying">
-                  <button class="btn"
-                          style="background-color: deepskyblue;color: white">Change
-                  </button>
-                </router-link>&nbsp;&nbsp;
-                <button class="btn" onclick="subShow()"
-                        style="background-color:#5cb85c;color: white">Submitte
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>xYM</td>
-              <td>xym</td>
-              <td>xym</td>
-              <td>xYM</td>
-              <td>xYM</td>
+            <tr v-for="l1 in list1">
+              <td v-text="l1.id"></td>
+              <td v-text="l1.pn"></td>
+              <td v-text="l1.pt"></td>
+              <td v-text="l1.mn"></td>
+              <td v-text="l1.psst"></td>
               <td>
                 <router-link to="/entrying">
                   <button class="btn"
@@ -60,25 +43,54 @@
                         style="background-color:#5cb85c;color: white">Submitte
                 </button>
               </td>
+
             </tr>
-            <tr>
-              <td>xYM</td>
-              <td>xym</td>
-              <td>xym</td>
-              <td>xYM</td>
-              <td>xYM</td>
-              <td>
-                <router-link to="/entrying">
-                  <button class="btn"
-                          style="background-color: deepskyblue;color: white">Change
-                  </button>
-                </router-link>&nbsp;&nbsp;
-                <button class="btn" onclick="subShow()"
-                        style="background-color:#5cb85c;color: white">Submitte
-                </button>
-              </td>
-            </tr>
+
             </tbody>
+            <!--<tbody>-->
+            <!--<tr>-->
+            <!--<td>xYM</td>-->
+            <!--<td>Problem1</td>-->
+            <!--<td>xym</td>-->
+            <!--<td>xYM</td>-->
+            <!--<td width="100">xYM</td>-->
+            <!--<td width="200">-->
+            <!--<router-link to="/entrying">-->
+            <!--<button class="btn"-->
+            <!--style="background-color: deepskyblue;color: white">Change-->
+            <!--</button>-->
+            <!--</router-link>&nbsp;&nbsp;-->
+            <!--<button class="btn" onclick="subShow()"-->
+            <!--style="background-color:#5cb85c;color: white">Submitte-->
+            <!--</button>-->
+            <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td>xYM</td>-->
+            <!--<td>xym</td>-->
+            <!--<td>xym</td>-->
+            <!--<td>xYM</td>-->
+            <!--<td>xYM</td>-->
+
+            <!--</tr>-->
+            <!--<tr>-->
+            <!--<td>xYM</td>-->
+            <!--<td>xym</td>-->
+            <!--<td>xym</td>-->
+            <!--<td>xYM</td>-->
+            <!--<td>xYM</td>-->
+            <!--<td>-->
+            <!--<router-link to="/entrying">-->
+            <!--<button class="btn"-->
+            <!--style="background-color: deepskyblue;color: white">Change-->
+            <!--</button>-->
+            <!--</router-link>&nbsp;&nbsp;-->
+            <!--<button class="btn" onclick="subShow()"-->
+            <!--style="background-color:#5cb85c;color: white">Submitte-->
+            <!--</button>-->
+            <!--</td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
           </table>
         </div>
 
@@ -138,12 +150,14 @@
 
     <myfooter></myfooter>
     <script type="application/javascript">
+
       var s1 = document.getElementById("subList");
 
       function subShow() {
         s1.style.display = "block"
 
       }
+
 
     </script>
   </div>
@@ -152,14 +166,37 @@
 
 <script>
 
-
   import myheader from './app/app-header.vue'
   import myfooter from './app/app-footer.vue'
 
   export default {
     name: 'entrying',
     data() {
-      return {}
+
+      return {
+        list1: [
+          {
+            id: 1,
+            pn: "p1",
+            mn: "nike",
+            pt: 20171130,
+            psst: "10min"
+          },
+          {
+            id: 2,
+            pn: "p1",
+            mn: "nike",
+            pt: 20171130,
+            psst: "10min"
+          }, {
+            id: 3,
+            pn: "p1",
+            mn: "nike",
+            pt: 20171130,
+            psst: "10min"
+          }
+        ]
+      }
     },
     methods: {},
     components: {
@@ -201,7 +238,8 @@
   .body {
     margin: 0 0 65px 0;
   }
-  .body a{
+
+  .body a {
     text-decoration: none;
   }
 
